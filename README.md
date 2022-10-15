@@ -1,0 +1,2 @@
+# changelog-next
+Changelog generator
