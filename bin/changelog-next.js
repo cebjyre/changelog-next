@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { stub } from "../lib/index.js";
+import { getVersion } from "../lib/index.js";
 
-stub();
+console.log(await getVersion())
