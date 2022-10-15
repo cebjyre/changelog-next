@@ -3,6 +3,10 @@
 	"version": "0.0.1",
 	"description": "Changelog generator",
 	"main": "lib/index.js",
+	"bin": {
+		"changelog-next": "bin/changelog-next.js"
+	},
+	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
