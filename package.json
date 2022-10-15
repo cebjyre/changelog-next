@@ -1,0 +1,22 @@
+{
+	"name": "@glenn.fowler/changelog-next",
+	"version": "0.0.1",
+	"description": "Changelog generator",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cebjyre/changelog-next.git"
+	},
+	"keywords": [
+		"changelog"
+	],
+	"author": "Glenn Fowler",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cebjyre/changelog-next/issues"
+	},
+	"homepage": "https://github.com/cebjyre/changelog-next#readme"
+}
