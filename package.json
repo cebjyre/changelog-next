@@ -6,6 +6,9 @@
 	"bin": {
 		"changelog-next": "bin/changelog-next.js"
 	},
+	"files": [
+		"/lib"
+	],
 	"type": "module",
 	"scripts": {
 		"version": "./bin/changelog-next.js && git add next-changelog.tmpl CHANGELOG",
