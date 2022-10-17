@@ -68,10 +68,16 @@ _`package.json`_
 }
 ```
 
-Create (or update) your _`.npmignore`_ file to prevent the changelog template from being included in your package when you publish it:
+#### Optionally prevent the changelog template from being included in your package when you publish it:
+
+If you are using the _`.npmignore`_ file you can add to it:
 
 _`.npmignore`_
 ```
 # Whatever may already be in this file
 next-changelog.tmpl
 ```
+
+**Note the (potentially) unintended consequence of using a _`.npmignore`_ file being that the _`.gitignore`_ that may otherwise be filtering out files from your generated package will be disregarded - see https://medium.com/@jdxcode/for-the-love-of-god-dont-use-npmignore-f93c08909d8d**
+
+Otherwise you can use the `files` property of _`package.json`_ to whitelist exactly the files you wish to be included in your package. If this seems like too much effort, you can just let the changelog template be included in the generated package - it really isn't that big a deal.
