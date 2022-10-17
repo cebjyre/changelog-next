@@ -81,3 +81,11 @@ next-changelog.tmpl
 **Note the (potentially) unintended consequence of using a _`.npmignore`_ file being that the _`.gitignore`_ that may otherwise be filtering out files from your generated package will be disregarded - see https://medium.com/@jdxcode/for-the-love-of-god-dont-use-npmignore-f93c08909d8d**
 
 Otherwise you can use the `files` property of _`package.json`_ to whitelist exactly the files you wish to be included in your package. If this seems like too much effort, you can just let the changelog template be included in the generated package - it really isn't that big a deal.
+
+## Questions
+
+### Why not just use conventional commits and generate the changelog using one of the existing packages fully automatically?
+I haven't (so far) been sold on the conventional commits approach - I can see the value in it, but personally I like being able to be more flexible with commit messages, and able to precisely craft changelog items without impacting the commit log. This package is scratching my own itch, and if there are other tools that serve your needs better, great!
+
+### This package is pretty limited and inflexible; why no configuration ability?
+I currently have no expectation that this will get any real usage from other people; complexity that doesn't actually help anyone doesn't seem worthwhile at this stage. If you do want to use it but are running into limitations, please create an issue (or a pull request).
