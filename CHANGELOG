@@ -1,5 +1,9 @@
 Notable changes for @glenn.fowler/changelog-next
 
+0.1.0 - 2022-11-16
+Add usage documentation
+Add initial tests
+
 0.0.2 - 2022-10-15
 Dogfood time (this should work properly on 'npm version')
 
