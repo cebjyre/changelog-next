@@ -28,6 +28,6 @@
 	},
 	"homepage": "https://github.com/cebjyre/changelog-next#readme",
 	"devDependencies": {
-		"jasmine": "^4.4.0"
+		"jasmine": "^5.0.0"
 	}
 }
