@@ -5,7 +5,7 @@ import { getTemplate, getVersion, generateChangelog, updateTemplate, writeChange
 const version = await getVersion();
 const template = await getTemplate();
 const now = new Date();
-const currDate = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}`;
+const currDate = now.toISOString().split('T')[0];
 
 writeTemplate({template: updateTemplate({template, version, date: currDate})});
 writeChangelog({changelog: generateChangelog({template, version, date: currDate})});
