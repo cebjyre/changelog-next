@@ -68,6 +68,20 @@ _`package.json`_
 }
 ```
 
+To use a different changelog filename, use the `-o` flag (currently the available filenames are limited, see the code in `filesystem.js`) - update the `git add` code appropriately as well:
+
+_`package.json`_
+```json
+{
+	// ...
+	"scripts": {
+		"version": "changelog-next -o CHANGELOG.md && git add next-changelog.tmpl CHANGELOG.md",
+		// ...
+	},
+	// ...
+}
+```
+
 #### Optionally prevent the changelog template from being included in your package when you publish it:
 
 If you are using the _`.npmignore`_ file you can add to it:
