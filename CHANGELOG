@@ -1,5 +1,8 @@
 Notable changes for @glenn.fowler/changelog-next
 
+0.2.0 - 2023-10-29
+Allow (somewhat) customised changelog filenames
+
 0.1.1 - 2023-10-15
 Make timestamps correctly use leading zeroes for month/date
 
