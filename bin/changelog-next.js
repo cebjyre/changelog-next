@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 
-import { getTemplate, getVersion, generateChangelog, updateTemplate, writeChangelog, writeTemplate } from "../lib/index.js";
+import { getTemplate, getVersion, generateChangelog, updateTemplate, writeChangelog, writeTemplate, filenameIsAllowed } from "../lib/index.js";
 
 let filename = 'CHANGELOG';
 if(process.argv[2] === '-o') { // If arguments get trickier, use something smarter
-	filename = process.argv[3]
+	const providedFilename = process.argv[3];
+	if (filenameIsAllowed(providedFilename)){
+		filename = providedFilename;
+	}
 }
 
 const version = await getVersion();
